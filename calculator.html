@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/cal.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/number.js"></script>
+    <script src="js/operation.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><img src="imgs/jr.jpg" height="70px" width="70px" alt=”site’s logo”.></h1>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="socials.html">Social</a>
+            <div class="InputContainer">
+                <input placeholder="Search.." id="input" class="input" name="text" type="text">
+
+            </div>
+        </div>
+
+    </header>
+    <center>
+        <div class="flex-container1">
+            <div class="flex">
+                <h1>Simple Calculator</h1>
+            </div>
+            <br>
+            <div class="flex1">
+                <input id="number-input" type="text" value="0" readonly>
+            </div>
+            <br>
+            <div class="flex1">
+                <input id="operation-input" type="hidden">
+            </div>
+            <br>
+            <div class="flex1">
+                <input id="previous" type="hidden" value="0">
+            </div>
+            <div class="flex-container">
+                <button onclick="number(7)"> 7 </button>
+                <button onclick="number(8)"> 8 </button>
+                <button onclick="number(9)"> 9 </button>
+                <button onclick="equal()" style="background-color: orange;"> = </button>
+            </div>
+
+            <div class="flex-container">
+                <button onclick="number(4)"> 4 </button>
+                <button onclick="number(5)"> 5 </button>
+                <button onclick="number(6)"> 6 </button>
+                <button onclick="operation('+')"> + </button>
+
+            </div>
+
+            <div class="flex-container">
+                <button onclick="number(1)"> 1 </button>
+                <button onclick="number(2)"> 2 </button>
+                <button onclick="number(3)"> 3 </button>
+                <button onclick="operation('-')"> - </button>
+            </div>
+
+            <div class="flex-container">
+                <button onclick="number(0)"> 0 </button>
+                <button onclick="clearInput()" style="background-color: orange;"> C </button>
+                <button onclick="operation('/')"> / </button>
+                <button onclick="operation('*')"> * </button>
+
+            </div>
+        </div>
+    </center>
+    <footer>
+        <center>RJ&JP 2024</center>
+    </footer>
+</body>
+
+</html>

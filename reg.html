@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/reg.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/reg.js"></script>
+</head>
+<header>
+    <h1><img src="imgs/logo1.png" height="70px" width="70px" alt=”site’s logo”.></h1>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="socials.html">Social</a>
+        <div class="InputContainer">
+            <input placeholder="Search.." id="input" class="input" name="text" type="text">
+            
+          </div>
+    </div>
+
+</header>
+
+<body>
+
+
+    <center>
+        <form>
+
+            <b><h3>Register</h3></b>
+            <h2 id="error"></h2>
+            <br><br>
+            <label class="labelStyle">Username:</label>
+            <input type="text" id="username">
+            <br>
+            <center><label class="labelStyle">Name:</label></center>
+            <input type="text" id="name" />
+            <br>
+            <label class="labelStyle">Gender:</label>
+            <select name="Gender" id="gen">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <br><br>
+            </div>
+            <label class="labelStyle">Password:</label>
+            <input type="password" id="password">
+            <br><br>
+            <a class="forgot" onclick="forgot()" href="#">Forgot Password</a>
+            <br><br>
+            <button type="button" onclick="login()" class="btn">Register</button>
+            <br>
+            
+    </center>
+    </form>
+    <footer>
+        <center>RJ&JP 2024</center>
+    </footer>
+</body>
+
+</html>

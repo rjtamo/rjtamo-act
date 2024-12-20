@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <script src="js/login.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><img src="imgs/jr.jpg" height="70px" width="70px" alt=”site’s logo”.></h1>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="socials.html">Social</a>
+            <div class="InputContainer">
+                <input placeholder="Search.." id="input" class="input" name="text" type="text">
+                
+              </div>
+        </div>
+
+    </header>
+    <center>
+        <form>
+            <h3>Sign in</h3>
+            <h2 id="error"></h2>
+            <br><br>
+            <label class="labelStyle">Username:</label>
+            <input type="text" id="username">
+            <br><br>
+            <label class="labelStyle">Password:</label>
+            <input type="password" id="password">
+            <br><br>
+            <a class="forgot" onclick="forgot()" href="#">Forgot Password</a>
+            <br><br>
+            <button type="button" onclick="login()" class="btn">Login</button>
+            <br><br>
+            <br>
+             Didn't Register Yet? <a class="forgot" href="reg.html">Register Here</a>
+        </form>
+    </center>
+    <footer>
+        <center>RJ&JP 2024</center>
+    </footer>
+</body>
+
+</html>
